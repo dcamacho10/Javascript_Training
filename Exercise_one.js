@@ -1,3 +1,5 @@
+
+
 /*Looping a Triangle
 
 Write a loop that makes seven calls to console.log to output the following triangle:
@@ -16,3 +18,10 @@ console.log(abc.length);
 // → 3
 */
 
+
+let triangleConcat = "#";
+while(triangleConcat.length < 8)
+{
+    console.log(triangleConcat);
+    triangleConcat += "#";
+};
