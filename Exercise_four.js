@@ -5,3 +5,7 @@ Chapter 2 introduced the standard function Math.min, which returns its smallest 
 
 */
 
+function min(arg1, arg2)
+{
+    return arg1>arg2?arg2:arg1;
+}
