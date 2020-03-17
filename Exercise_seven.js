@@ -29,3 +29,18 @@ function range(arg1, arg2)
     }
     return sequence;
 }
+
+function sum(numbers)
+{
+    let result = 0;
+
+    for(let iterator = 0; iterator < numbers.length; iterator++)
+    {
+        result += numbers[iterator];
+    }
+
+    return result;
+}
+
+
+console.log(sum(range(1, 10)));
