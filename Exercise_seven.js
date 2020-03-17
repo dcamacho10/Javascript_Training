@@ -13,19 +13,22 @@ As a bonus assignment, modify your range function to take an optional third argu
 
 */
 
-function range(arg1, arg2)
+function range(num1, num2, step)
 {
     let sequence = [];
-    if(arg1>arg2)
-    {
-        for(let iterator = arg2; iterator <= arg1; iterator ++){
-            sequence.push(iterator);
-        }    
+    if(num2>num1){
+        let iterator = num1;
+            do {
+                sequence.push(iterator);
+                iterator += step;
+            } while (iterator <=num2);
     }
     else{
-        for(let iterator = arg1; iterator <= arg2; iterator ++){
+        let iterator = num1;
+        do {
             sequence.push(iterator);
-        }        
+            iterator += step;
+        } while (iterator >= num2);
     }
     return sequence;
 }
