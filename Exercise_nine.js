@@ -45,6 +45,30 @@ function listToArray(list){
   return array
 }
 
+function prepend(element, list) {
+  return {element, rest: list};
+}
+
+
+function nth(list, number){
+  let count = 0;
+  let element;
+  if(!list){
+    return undefined;
+  }
+  else{
+    for(let node = list; node; node = node.rest){
+
+      if(count==number){
+        element = node.element;
+        break;
+      }
+      count++;
+    }
+    return element;
+  }
+}
+
 
 newArray = [2,3,4]
 
